@@ -20,7 +20,7 @@ def callback(event):
     
 root = tk.Tk(className="Intelligent Code Editor")
 textPad = ScrolledText(root, width=500, height=100,fg="white",bg="black")
-textPad.config(font=("Arial",20),insertbackground="white")
+textPad.config(font=("Arial",15),insertbackground="white")
 lineColPosList = textPad.index(CURRENT).split('.')
 
 textPad.bind("<Button-1>", callback)
@@ -59,7 +59,6 @@ def open_file():
     resultFile2.close()
     if(content != prev_content):
         textPad.insert(INSERT,content)
-        textPad.insert(INSERT,'\n')
     resultFile.close()
     resultFile2 = open("intermediate2.txt","w")
     resultFile2.write(content)
