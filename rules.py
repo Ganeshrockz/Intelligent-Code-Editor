@@ -25,7 +25,11 @@ rules = {
         "return": "returnStatementHandler",
         "math":"expr",
         "condition":"conditionalStatementsCondition",
-        "end": "end"
+        "end": "end",
+        "call": "functionCall"
+    },
+    "NNS": {
+        "parameters": "functionParameters"
     },
     "VB" : {
         "create": {
@@ -45,7 +49,10 @@ rules = {
             "NN": "variableInput"
         },
         "end":"end",
-        "initialize": "initializationFor"
+        "initialize": "initializationFor",
+        "call":{
+            "NN": "functionCall"
+        }
     },
     "VBP" : {
         "include": {

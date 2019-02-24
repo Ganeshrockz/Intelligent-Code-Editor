@@ -1,0 +1,2 @@
+addnum,int,int,int
+addnum,void,int,int
